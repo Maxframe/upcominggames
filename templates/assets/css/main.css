@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+html {
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #271B23;
+}
+
+body, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 14rem 1fr;
+      grid-template-rows: 14rem 1fr;
+  z-index: -1;
+}
+
+.background .bg_img {
+  background-image: -webkit-gradient(linear, left top, right top, from(#271B23), color-stop(50%, #271b2300)), -webkit-gradient(linear, left bottom, left top, from(#271B23), to(#271b2300)), url("../img/03_2021/minute_of_island.jpg");
+  background-image: linear-gradient(to right, #271B23 0%, #271b2300 50%), linear-gradient(to top, #271B23 0%, #271b2300 100%), url("../img/03_2021/minute_of_island.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.background .bg_grad {
+  background: #271B23;
+}
+
+nav {
+  position: relative;
+  height: 8rem;
+}
+
+nav .month {
+  position: absolute;
+  margin: 0;
+  top: 0.8rem;
+  left: 2.3rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+nav .year {
+  font-weight: 300;
+}
+
+nav .subtitle {
+  position: absolute;
+  top: 3.8rem;
+  left: 2.3rem;
+  font-weight: 300;
+}
+
+nav .arrowwrapper {
+  position: absolute;
+  width: 1.5rem;
+  height: 3rem;
+  top: 1.3rem;
+  left: 21rem;
+}
+
+nav .al {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: 50% 42%;
+          transform-origin: 50% 42%;
+  left: 0rem !important;
+}
+
+.heightwrap {
+  height: auto;
+}
+
+.widthwrap {
+  max-width: 90vw;
+  padding: 0 0.7rem 0.7rem;
+  margin: auto;
+}
+
+.calendar_container {
+  height: 80vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 4fr 8fr 8fr 1fr 1fr;
+      grid-template-columns: 1fr 4fr 4fr 8fr 8fr 1fr 1fr;
+  -ms-grid-rows: 0.5fr 8fr 4fr 4fr 8fr 4fr;
+      grid-template-rows: 0.5fr 8fr 4fr 4fr 8fr 4fr;
+  -webkit-column-gap: 0.6%;
+          column-gap: 0.6%;
+  row-gap: 2.5%;
+}
+
+.weekday {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.card {
+  position: relative;
+  border-radius: 1.2rem;
+  background: #493946dc;
+  overflow: hidden;
+}
+
+.dcard {
+  background: #3d333b5e;
+  overflow: hidden;
+}
+
+.dcard > div > span {
+  opacity: 0.3;
+}
+
+.datewrapper {
+  position: absolute;
+  margin-top: 0.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.dc {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.dl {
+  left: 0.4rem;
+}
+
+.dg {
+  background-color: #DE6275;
+}
+
+.dg > span {
+  opacity: 1;
+}
+
+.date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+.ltext {
+  color: #fff;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.gtitle {
+  margin: 0.6rem;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 1.2rem);
+}
+
+.bg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.bg:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+#b03_2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/03_2021/maquette.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/03_2021/maquette.jpg");
+}
+
+.g234 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+  row-gap: 0.2rem;
+}
+
+.g234 a {
+  position: relative;
+}
+
+.m03_4 #m03_4_1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.m03_4 #m03_4_1 #b03_4_1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/03_2021/loop_hero.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/03_2021/loop_hero.jpg");
+}
+
+.m03_4 #m03_4_2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.m03_4 #m03_4_2 #b03_4_2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/03_2021/sea_of_solitude.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/03_2021/sea_of_solitude.jpg");
+}
+
+.m03_4 #m03_4_3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.m03_4 #m03_4_3 #b03_4_3 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/03_2021/sir_brante.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/03_2021/sir_brante.jpg");
+}
+
+#b03_5 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/03_2021/harvest_moon.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/03_2021/harvest_moon.jpg");
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+  z-index: 2;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #493946f2;
+  padding: 1rem 1.5rem;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 1rem;
+}
+
+.close {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #271B23;
+  border-radius: 0.25rem;
+}
+
+.close:hover {
+  color: #130d11;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+/*# sourceMappingURL=main.css.map */

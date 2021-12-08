@@ -1,0 +1,34 @@
+dateModified: 1638150936
+email:
+  fromEmail: wernermaxx@gmail.com
+  fromName: Upcominggames
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1e0206b6-0cf7-4792-bb36-277a588e8fac: Upcominggames # Upcominggames
+    89ef1228-ed38-4173-a311-ceb748de5c3d: Home # Home
+    98965d78-f9bc-4cef-8ea7-979f53f7070d: 'Rich Text' # Rich Text
+    a8a78f49-c726-40f4-b9e8-a9441e1428eb: uploads # uploads
+    b98138e5-eaca-4e60-8a16-fe42fce5f099: small # small
+    d0236c44-d1f0-46f4-8958-0138ba6aae13: 'Background Image' # Background Image
+    dbe6ebbf-dc13-4c09-9138-4bce03eae149: Common # Common
+    e9a9b718-0b7b-4e05-a8cf-b9d4dc48f4f6: Home # Home
+    e56e9ddf-d176-480a-a4a3-920ec2357241: Upcominggames # Upcominggames
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: Upcominggames
+  retryDuration: null
+  schemaVersion: 3.7.8
+  timeZone: Europe/London
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
