@@ -46,6 +46,19 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 67103f7e-aba9-4280-becb-098cc6a392d9 # Game Entries
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Game Entries'
+        sortOrder: 2
 handle: home
 hasTitleField: false
 name: Home

@@ -4,56 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>March 2021 | Upcoming Games</title>
+        <title>Upcoming Games</title>
         <meta name="description" content="Website with all the upcoming games.">
         <meta name="author" content="Max Werner">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 
     <style>
-        .bg_img {
-        background-image: 
-        linear-gradient(to right, #271B23 0%, #271b2300 50%),
-        linear-gradient(to top, #271B23 0%, #271b2300 100%), 
-        url({{ entry.backgroundImage.one().url }}) !important;    
-        background-size: cover;
-        background-position: center center;
-    }
+
     </style>
 <body>
 
 <div class="heightwrap">
-    <div class="background">
-        <div class="bg_img"></div>
-        <div class="bg_grad"></div>
+    <div class="bg-background">
+        <img class="bg-image" src="{{ entry.backgroundImage.one().url }}">
+        <div class="bg-grad"></div>
     </div>
     <div class="widthwrap">      
-        <nav>
-            <a href="#" class="arrowwrapper al" target="_top">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.01 77.24">
-                    <defs><style>.arrowd{fill:rgba(255, 255, 255, 0.4);}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="arrowd" d="M38.62,28.18l-26-26a7.4,7.4,0,0,0-10.45,0h0a7.4,7.4,0,0,0,0,10.45l26,26-26,26a7.39,7.39,0,0,0,0,10.44h0a7.4,7.4,0,0,0,10.45,0l26-26,5.22-5.23a7.37,7.37,0,0,0,0-10.44Z"/></g></g>
-                </svg>
-            </a>
-
-            <a href="#" class="arrowwrapper" target="_top">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.01 77.24">
-                    <defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M38.62,28.18l-26-26a7.4,7.4,0,0,0-10.45,0h0a7.4,7.4,0,0,0,0,10.45l26,26-26,26a7.39,7.39,0,0,0,0,10.44h0a7.4,7.4,0,0,0,10.45,0l26-26,5.22-5.23a7.37,7.37,0,0,0,0-10.44Z"/></g></g>
-                </svg>
-            </a>
-
-            <h1 class="month">March <span class="year">2021</span></h1>
-            <h2 class="subtitle">Upcoming games</h2>
-        </nav>
-
-        <div class="calendar_container">
-            <span class="weekday ltext">mon</span>
-            <span class="weekday ltext">tue</span>
-            <span class="weekday ltext">wed</span>
-            <span class="weekday ltext">thu</span>
-            <span class="weekday ltext">fri</span>
-            <span class="weekday ltext">sat</span>
-            <span class="weekday ltext">sun</span>
 
 
+ <div class="calendar" data-calendar></div>
+
+{% set blocks = entry.gameEntries.gameReleaseDate('2021-01-01').all() %}
+{% if blocks|length %}
+  <ul>
+    {% for block in blocks %}
+       <p>{{ block.gameReleaseDate | date('Y-m-d') }}</p>
+
+       <p>{{ block.gameDescription }}</p>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+        <script src="assets/scripts/calendar.js"></script>
 </body>
 </html>

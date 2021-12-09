@@ -1,12 +1,17 @@
-dateModified: 1638150936
+dateModified: 1638957048
 email:
   fromEmail: wernermaxx@gmail.com
   fromName: Upcominggames
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0b6a4d40-3761-4fbb-b34e-8ad708a71973: 'Release Date' # Release Date
     1e0206b6-0cf7-4792-bb36-277a588e8fac: Upcominggames # Upcominggames
+    4e06b80d-8733-440c-a553-dd9d0b63d464: 'Game Title' # Game Title
+    8dec27cb-59d6-4492-88e2-e1e6da057712: 'Available Platform' # Available Platform
+    39ec059b-0bb6-4a08-bb1a-ea8c503e4444: 'Game Description' # Game Description
     89ef1228-ed38-4173-a311-ceb748de5c3d: Home # Home
+    67103f7e-aba9-4280-becb-098cc6a392d9: 'Game Entries' # Game Entries
     98965d78-f9bc-4cef-8ea7-979f53f7070d: 'Rich Text' # Rich Text
     a8a78f49-c726-40f4-b9e8-a9441e1428eb: uploads # uploads
     b98138e5-eaca-4e60-8a16-fe42fce5f099: small # small
@@ -14,6 +19,7 @@ meta:
     dbe6ebbf-dc13-4c09-9138-4bce03eae149: Common # Common
     e9a9b718-0b7b-4e05-a8cf-b9d4dc48f4f6: Home # Home
     e56e9ddf-d176-480a-a4a3-920ec2357241: Upcominggames # Upcominggames
+    eccf097a-c1b2-486f-9e3b-41a4224ff772: 'Game Entry' # Game Entry
 plugins:
   redactor:
     edition: standard

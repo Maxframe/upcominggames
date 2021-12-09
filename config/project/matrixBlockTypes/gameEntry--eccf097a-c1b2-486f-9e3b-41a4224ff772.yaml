@@ -1,0 +1,186 @@
+field: 67103f7e-aba9-4280-becb-098cc6a392d9 # Game Entries
+fieldLayouts:
+  8ede373a-3a93-4590-976b-3a2ac1fb54eb:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4e06b80d-8733-440c-a553-dd9d0b63d464 # Game Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 0b6a4d40-3761-4fbb-b34e-8ad708a71973 # Release Date
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 39ec059b-0bb6-4a08-bb1a-ea8c503e4444 # Game Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8dec27cb-59d6-4492-88e2-e1e6da057712 # Available Platform
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0b6a4d40-3761-4fbb-b34e-8ad708a71973: # Release Date
+    columnSuffix: null
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: gameReleaseDate
+    instructions: 'Add date of release of the game'
+    name: 'Release Date'
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: '30'
+      showDate: true
+      showTime: false
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  4e06b80d-8733-440c-a553-dd9d0b63d464: # Game Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: gameTitle
+    instructions: 'Add title of the game'
+    name: 'Game Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8dec27cb-59d6-4492-88e2-e1e6da057712: # Available Platform
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: gamePlatform
+    instructions: 'Choose available platforms'
+    name: 'Available Platform'
+    searchable: false
+    settings:
+      multi: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - PC
+            -
+              - value
+              - platformPC
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Playstation 4'
+            -
+              - value
+              - platformPS4
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Playstation 5'
+            -
+              - value
+              - platformPS5
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'XBOX One'
+            -
+              - value
+              - platformXboxOne
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'XBOX Series'
+            -
+              - value
+              - platformXboxSeries
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Nintendo Switch'
+            -
+              - value
+              - platformSwitch
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Checkboxes
+  39ec059b-0bb6-4a08-bb1a-ea8c503e4444: # Game Description
+    columnSuffix: null
+    contentColumnType: string(800)
+    fieldGroup: null
+    handle: gameDescription
+    instructions: 'Add a short description of the game (optional)'
+    name: 'Game Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 200
+      code: ''
+      columnType: null
+      initialRows: '6'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: gameEntry
+name: 'Game Entry'
+sortOrder: 1

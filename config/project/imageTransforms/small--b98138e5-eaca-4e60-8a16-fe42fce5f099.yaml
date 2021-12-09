@@ -1,9 +1,9 @@
 format: jpg
 handle: small
-height: 300
+height: 600
 interlace: none
 mode: fit
 name: small
 position: center-center
 quality: null
-width: 400
+width: 800
